@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+
+      <h1 class="home">Weather</h1>
+      <div class="search">
+        <input
+          type="text"
+          name="inputText"
+          placeholder="Enter City"
+          id="inputText"
+        />
+        <button id="btn" form="inputText"><img src="/Images/search.png" alt="" /></button>
+      </div>
+      <div class="error">
+        <img src="/Images/error.png" alt="" srcset="">
+        <h1>Sorry, Location not found!!!</h1>
+    
+      </div>
+
+      <div class="weather_body">
+        <img id="showImg" src=""  />
+
+        <div class="weather_box">
+          <p class="temperature"> <span class="temp">0</span><sup>°C</sup></p>
+          <p class="description">Light Rain</p>
+        </div>
+        <div class="weather_detail">
+          <div class="humidity">
+            <img src=" /Images/humidity.jpg" />
+            <span > 
+              <p> <span id="humidity">0</span>%</p>
+              <p>Humidity</p>
+            </span>
+            
+          </div>
+          <div class="wind">
+            <img src="/Images/wind.png" />
+            <span>
+              <p> <span id="windSpeed">0</span> km/h</p>
+              <p>Wind Speed</p>
+            </span>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.error{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(4, 4, 29);
+
+}
+.error img{
+    transform: scale(1);
+    transition: all 0.8s;
+    width: 120px; 
+    margin: 10px;   
+}
+.error img:hover{
+    transform: scale(1.5);
+}
+body{
+    height: 100vh;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: rgb(95, 95, 161);
+    border-radius: 10px;
+    padding: 35px 10px;
+    min-height: 76vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container{
+        width: 60vw;
+    }
+  }
+@media only screen and (max-width: 450px) {
+    .container{
+        width: 90vw;
+    }
+  }
+  
+
+.home{
+    font-size: 50px;
+    font-family: "Kanit", sans-serif;
+    color: rgb(16, 16, 97);
+}
+.search{
+    border: 2px solid blue;
+    width: 90%;
+    height: 20%;
+    display: flex;
+    text-align: center;
+    justify-content:space-between;
+    border-radius: 20px;
+    text-transform: capitalize;
+    margin: 0px 30px;
+}
+
+.search button{
+
+    border-radius:50px;
+    margin: 2px ;
+    margin-left: 10px;
+    transform: scale(1);
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.search input{
+    border-radius: 20px;
+    margin: 2px 4px;
+    margin-right:auto ;
+    width: 85%;
+    display: flex;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+.search input:hover , .search button:hover{
+    transform: scale(1.05);
+
+}
+.search button img{
+    height:25px;
+    width: 25px;
+    border-radius: 50px;
+    padding: 2px;
+    margin: 1px;
+
+}
+.weather_body{
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+.weather_box{
+    display: flex;
+    flex-direction: column;
+    margin-block: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#showImg{
+    width: 60%;
+    transform: scale(1);
+    transition: all 0.5s;
+    margin: 25px;
+}
+#showImg:hover{
+    transform: scale(1.2);
+}
+.temperature{
+    font-size: 40px;
+    font-weight: 800;
+}
+.temperature sup{
+    font-size: medium;
+}
+.description{
+    font-family: sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.weather_detail{
+    width: 100%;
+    display:flex;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+@media only screen and (orientation:portrait){
+    .weather_detail{
+        flex-direction: column;
+        gap: 2rem;
+    }
+   
+  }
+
+.humidity,.wind{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#windSpeed , #humidity{
+    font-size: 1.5rem;
+}
+.wind img , .humidity img{
+    height: 45px;
+    font-family: sans-serif;
+    margin: 5px;
+    transform: scale(1);
+    transition: all 0.5s;
+}
+.wind img:hover, .humidity img:hover{
+    transform: scale(1.5);
+}
